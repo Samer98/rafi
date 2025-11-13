@@ -59,8 +59,12 @@ open_ai = OpenAI()
 
 @app.route("/openai-chat", methods=["POST"])
 def openai_chat():
+    open_ai = OpenAI()
     body = request.json
-    return open_ai.chat(body)
+    print("Body received:", body)
+    result = open_ai.chat(body)
+    print("Result:", result)
+    return result
 
 @app.route("/openai-chat-stream", methods=["POST"])
 def openai_chat_stream():
