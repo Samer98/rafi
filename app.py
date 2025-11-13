@@ -22,6 +22,7 @@ cors = CORS(app)
 @app.route("/ping")
 def ping():
     return {"status": "ok"}
+
 # Sends response back to Deep Chat using the Response format:
 # https://deepchat.dev/docs/connect/#Response
 @app.errorhandler(Exception)
