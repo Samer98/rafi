@@ -111,10 +111,13 @@ DEFAULT_SYSTEM_MESSAGES: List[Dict[str, Any]] = [
         ),
     },
     {
-      "role": "system",
-      "content": "[{\"id\":\"lambda-f6et4et86q7111dwycw1\",\"filename\":\"www.idb.com scraped .md\",\"file_type\":\"text/html; charset=utf-8\"}]",
-      "name": "resource:file-info"
-    }
+        "role": "system",
+        "name": "resource:file-info",
+        "content": (
+            '[{"id":"lambda-f6c8bxjkd7p111atbcxi","filename":"https_www.idb.com.eg_en_about-us_1d609ffbb2.pdf",'
+            '"file_type":"application/pdf"}]'
+        ),
+    },
     {
             "role": "assistant",
             "name": "RAFI | IDB Smart assistant",
