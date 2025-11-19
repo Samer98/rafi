@@ -118,12 +118,6 @@ DEFAULT_SYSTEM_MESSAGES: List[Dict[str, Any]] = [
             '"file_type":"application/pdf"}]'
         ),
     },
-    {
-            "role": "assistant",
-            "name": "RAFI | IDB Smart assistant",
-            "content": "",
-            "partial": True,
-    },
 ]
 
 WEB_SEARCH_TOOL: List[Dict[str, Any]] = [
